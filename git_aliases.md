@@ -2,9 +2,9 @@
 
 ### A mettre dans : vim ~/.gitconfig
 ```shell
-git config core.autocrlf true 
-git config --list | findstr "alias"
-git branch --merged | grep -Ev "\*|master|develop" | xargs -r git branch -D
+#git config core.autocrlf true 
+#git config --list | findstr "alias"
+#git branch --merged | grep -Ev "\*|master|develop" | xargs -r git branch -D
 
 [alias]
 
