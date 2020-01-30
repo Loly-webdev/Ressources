@@ -1,13 +1,9 @@
-# PostgreSQL
-
-1. [Connexion](#1-connexion)  
-2. [Backup](#2-backup)  
-3. [Show ProcessList](#3-show-processlist)  
-4. [Debug](#4-debug)    
-
-## 1. Connexion
-
-```shell
+PostgreSQL
+Connexion
+Backup
+Show ProcessList
+Debug
+1. Connexion
 # Se connecter en admin
 [vagrant@ADP ~]$ su -
 [sudo] Mot de passe : vagrant
@@ -26,12 +22,7 @@ psql
 
 # Se déconnecter du mode requête SQL
 \q
-
-```
-
-## 2. Backup
-
-```shell
+2. Backup
 # Pour creer ou supprimer une BDD
 [vagrant@ADP ~]$ su -
 [sudo] Mot de passe : vagrant
@@ -50,12 +41,7 @@ pg_dump -c bdd_adp -U adp > /tmp/recette_dump.sql
 #Restore BDD
 pg_restore -d bdd_adp /tmp/recette_dump.tar
 psql -d bdd_adp < /tmp/recette_dump.sql
-
-```
-
-## 3. Show ProcessList
-
-```sql
+3. Show ProcessList
 /* First, check all the processes that are running: */
 SELECT * FROM pg_stat_activity WHERE state = 'active';
 
@@ -64,12 +50,7 @@ SELECT pg_cancel_backend(PID);
 
 /* This query might take a while to kill the query, so if you want to kill it the hard way, run this instead: */
 SELECT pg_terminate_backend(PID);
-
-```
-
-## 4. Debug
-
-```shell
+4. Debug
 # Find service
 systemctl list-units | grep postgresql
 
@@ -78,15 +59,10 @@ systemctl list-units | grep postgresql
 
 #Find process
 ps aux | grep bdd_adp
-```
-
-## 5. Query
-
-```sql
+5. Query
 INSERT INTO adp.activity
     (id, name, loginrequired, created_at, updated_at, archived, archived_at)
 VALUES
     (E'1', E'RH', E'true', E'2019-12-16 10:04:23', NULL, E'false', NULL)
 ON CONFLICT (id)
     DO NOTHING;
-```
