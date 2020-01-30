@@ -9,6 +9,7 @@
         diffs = diff --staged
         st = status
         co = checkout
+        ci = commit
 
         ###### Branche ######
         br = branch
