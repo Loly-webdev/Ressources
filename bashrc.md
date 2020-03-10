@@ -77,7 +77,7 @@ PROMPT_COMMAND='setPromptValue'
 ## La couleur :
 
 Pour cela, il faut utiliser les caractères spéciaux \e, \[, \].
-Le structure pour une couleur est : \e[<gras>;<couleur ou fond>m
+La structure pour une couleur est : \e[<gras>;<couleur ou fond>m
 Les codes couleurs utilisés comportent 2 éléments, le premier indique si le texte doit être en gras (0 ou 1) et le second le code couleur (30 à 37 sans couleur de fond et 40 à 47 avec couleur de fond).
 
    - Noir 0;30   
