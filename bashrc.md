@@ -45,7 +45,7 @@ function setPromptValue {
 }
 
 PROMPT_COMMAND='setPromptValue'
-exit'''
+```
 
 ## Voici une liste de caractères spéciaux :
 
