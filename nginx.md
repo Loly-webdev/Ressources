@@ -1,6 +1,11 @@
 # Création d'un Virtual Host sous nginx
 
 ## 1. Ajout d'un vhost PHP
+Ajouter un nouveau vhost dans le dossier /etc/nginx/sites-available/
+Creer le fichier : sudo touch /etc/nginx/sites-available/mon_premier_vhost.conf
+Editer le fichier : nano /etc/nginx/sites-available/mon_premier_vhost.conf
+Remplacer <prj_folder> par le nom du dossier du projet ex: monProjet
+Remplacer <prj_url> par l'url d'acces du projet ex: monProjet.localhost
 
 ```sh
 #/etc/nginx/sites-available/
