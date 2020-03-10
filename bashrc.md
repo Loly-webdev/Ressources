@@ -57,7 +57,7 @@ PROMPT_COMMAND='setPromptValue'
 - \$ : « # » si l'utilisateur courant est super-utilisateur, « $ » sinon
 - \j : le nombre de processus gérés par le terminal courant ( exemple : « 0 » )
 - ! : le nombre de commande dans l'historique ( exemple : « 452 » )
-- # : le nombre de commande dans l'historique de la session courante ( exemple : « 5 » )
+- '#' : le nombre de commande dans l'historique de la session courante ( exemple : « 5 » )
 - \s : le nom du shell ( exemple : « bash » )
 - \v : la version du bash ( exemple : « 4.3 » )
 - \V : numéro de version en entier : majeur.mineure.patchlevel ( exemple : « 4.3.43 » )
