@@ -49,30 +49,30 @@ PROMPT_COMMAND='setPromptValue'
 
 ## Voici une liste de caractères spéciaux :
 
-\u : le nom d'utilisateur courant (exemple : « kazenojiyu »)
-\h : affiche le nom d'hôte jusqu'au premier point "." (exemple : « kazenojiyu-Laptop » )
-\H : affiche le nom d'hôte en entier ( exemple : « kazenojiyu-Laptop.localhost » )
-\w : le répertoire courant ( exemple : « ~/Documents/articles/article_terminal » )
-\W : basename du répertoire courant ( exemple : « article_terminal » )
-\$ : « # » si l'utilisateur courant est super-utilisateur, « $ » sinon
-\j : le nombre de processus gérés par le terminal courant ( exemple : « 0 » )
-! : le nombre de commande dans l'historique ( exemple : « 452 » )
-# : le nombre de commande dans l'historique de la session courante ( exemple : « 5 » )
-\s : le nom du shell ( exemple : « bash » )
-\v : la version du bash ( exemple : « 4.3 » )
-\V : numéro de version en entier : majeur.mineure.patchlevel ( exemple : « 4.3.43 » )
-\T : l'heure au format 12h HH:MM:SS ( exemple : « 09:45:50 » )
-\t : l'heure au format 24h HH:MM:SS ( exemple : « 21:45:50 » )
-\@ : l'heure au format 12h am/pm HH:MM ( exemple : « 09:45 » )
-\A : l'heure au format 24h am/pm HH:MM ( exemple : « 21:45 » )
-\d : la date au format « jour mois date » ( exemple : « jeu. juil. 21 » )
-\D : date au format spécifié (plus d'info sur le format : man strftime) ( exemple pour « \D{%d/%m/%Y %H:%M:%S} » : « 21/07/2016 21:43:54 »)
-\n : saut de ligne
-\r : retour chariot
-\ : antislash
-\e : caractère d'échappement ASCII, équivalent à \033 (utile pour ajouter les couleurs)
-[ : début de chaîne contenant des caractères non imprimable
-] : fin de chaîne contenant des caractères non imprimable
+- \u : le nom d'utilisateur courant (exemple : « kazenojiyu »)
+- \h : affiche le nom d'hôte jusqu'au premier point "." (exemple : « kazenojiyu-Laptop » )
+- \H : affiche le nom d'hôte en entier ( exemple : « kazenojiyu-Laptop.localhost » )
+- \w : le répertoire courant ( exemple : « ~/Documents/articles/article_terminal » )
+- \W : basename du répertoire courant ( exemple : « article_terminal » )
+- \$ : « # » si l'utilisateur courant est super-utilisateur, « $ » sinon
+- \j : le nombre de processus gérés par le terminal courant ( exemple : « 0 » )
+- ! : le nombre de commande dans l'historique ( exemple : « 452 » )
+- # : le nombre de commande dans l'historique de la session courante ( exemple : « 5 » )
+- \s : le nom du shell ( exemple : « bash » )
+- \v : la version du bash ( exemple : « 4.3 » )
+- \V : numéro de version en entier : majeur.mineure.patchlevel ( exemple : « 4.3.43 » )
+- \T : l'heure au format 12h HH:MM:SS ( exemple : « 09:45:50 » )
+- \t : l'heure au format 24h HH:MM:SS ( exemple : « 21:45:50 » )
+- \@ : l'heure au format 12h am/pm HH:MM ( exemple : « 09:45 » )
+- \A : l'heure au format 24h am/pm HH:MM ( exemple : « 21:45 » )
+- \d : la date au format « jour mois date » ( exemple : « jeu. juil. 21 » )
+- \D : date au format spécifié (plus d'info sur le format : man strftime) ( exemple pour « \D{%d/%m/%Y %H:%M:%S} » : « 21/07/2016 21:43:54 »)
+- \n : saut de ligne
+- \r : retour chariot
+- \ : antislash
+- \e : caractère d'échappement ASCII, équivalent à \033 (utile pour ajouter les couleurs)
+- [ : début de chaîne contenant des caractères non imprimable
+-  ] : fin de chaîne contenant des caractères non imprimable
 
 ## La couleur :
 
