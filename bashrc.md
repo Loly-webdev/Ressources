@@ -46,7 +46,7 @@ function setPromptValue {
 
 PROMPT_COMMAND='setPromptValue'
 
-## Voici une liste de caractères spéciaux :
+# Voici une liste de caractères spéciaux :
 ```shell
 
 \u : le nom d'utilisateur courant (exemple : « kazenojiyu »)
@@ -74,7 +74,7 @@ PROMPT_COMMAND='setPromptValue'
 [ : début de chaîne contenant des caractères non imprimable
 ] : fin de chaîne contenant des caractères non imprimable
 
-## La couleur :
+# La couleur :
 ```shell
 
 Pour cela, il faut utiliser les caractères spéciaux \e, \[, \].
