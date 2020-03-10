@@ -45,9 +45,9 @@ function setPromptValue {
 }
 
 PROMPT_COMMAND='setPromptValue'
+exit'''
 
-# Voici une liste de caractères spéciaux :
-```shell
+## Voici une liste de caractères spéciaux :
 
 \u : le nom d'utilisateur courant (exemple : « kazenojiyu »)
 \h : affiche le nom d'hôte jusqu'au premier point "." (exemple : « kazenojiyu-Laptop » )
@@ -74,8 +74,7 @@ PROMPT_COMMAND='setPromptValue'
 [ : début de chaîne contenant des caractères non imprimable
 ] : fin de chaîne contenant des caractères non imprimable
 
-# La couleur :
-```shell
+## La couleur :
 
 Pour cela, il faut utiliser les caractères spéciaux \e, \[, \].
 Le structure pour une couleur est : \e[<gras>;<couleur ou fond>m
