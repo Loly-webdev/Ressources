@@ -1,4 +1,5 @@
 # Alias et config pour le fichier .bashrc (sudo vim ~/.bashrc)
+## 1.Alias
 ```shell
 # basique
 #### ALIAS COMMANDE SYS ####
@@ -47,54 +48,59 @@ function setPromptValue {
 PROMPT_COMMAND='setPromptValue'
 ```
 
-## Voici une liste de caractères spéciaux :
+## 2.Liste de caractères spéciaux :
 
-- \u : le nom d'utilisateur courant (exemple : « kazenojiyu »)
-- \h : affiche le nom d'hôte jusqu'au premier point "." (exemple : « kazenojiyu-Laptop » )
-- \H : affiche le nom d'hôte en entier ( exemple : « kazenojiyu-Laptop.localhost » )
-- \w : le répertoire courant ( exemple : « ~/Documents/articles/article_terminal » )
-- \W : basename du répertoire courant ( exemple : « article_terminal » )
-- \$ : « # » si l'utilisateur courant est super-utilisateur, « $ » sinon
-- \j : le nombre de processus gérés par le terminal courant ( exemple : « 0 » )
-- ! : le nombre de commande dans l'historique ( exemple : « 452 » )
-- '#' : le nombre de commande dans l'historique de la session courante ( exemple : « 5 » )
-- \s : le nom du shell ( exemple : « bash » )
-- \v : la version du bash ( exemple : « 4.3 » )
-- \V : numéro de version en entier : majeur.mineure.patchlevel ( exemple : « 4.3.43 » )
-- \T : l'heure au format 12h HH:MM:SS ( exemple : « 09:45:50 » )
-- \t : l'heure au format 24h HH:MM:SS ( exemple : « 21:45:50 » )
-- \@ : l'heure au format 12h am/pm HH:MM ( exemple : « 09:45 » )
-- \A : l'heure au format 24h am/pm HH:MM ( exemple : « 21:45 » )
-- \d : la date au format « jour mois date » ( exemple : « jeu. juil. 21 » )
-- \D : date au format spécifié (plus d'info sur le format : man strftime) ( exemple pour « \D{%d/%m/%Y %H:%M:%S} » : « 21/07/2016 21:43:54 »)
-- \n : saut de ligne
-- \r : retour chariot
-- \ : antislash
-- \e : caractère d'échappement ASCII, équivalent à \033 (utile pour ajouter les couleurs)
-- [ : début de chaîne contenant des caractères non imprimable
--  ] : fin de chaîne contenant des caractères non imprimable
+```shell
 
-## La couleur :
+\u : le nom d'utilisateur courant (exemple : « kazenojiyu »)
+\h : affiche le nom d'hôte jusqu'au premier point "." (exemple : « kazenojiyu-Laptop » )
+\H : affiche le nom d'hôte en entier ( exemple : « kazenojiyu-Laptop.localhost » )
+\w : le répertoire courant ( exemple : « ~/Documents/articles/article_terminal » )
+\W : basename du répertoire courant ( exemple : « article_terminal » )
+\$ : « # » si l'utilisateur courant est super-utilisateur, « $ » sinon
+\j : le nombre de processus gérés par le terminal courant ( exemple : « 0 » )
+! : le nombre de commande dans l'historique ( exemple : « 452 » )
+# : le nombre de commande dans l'historique de la session courante ( exemple : « 5 » )
+\s : le nom du shell ( exemple : « bash » )
+\v : la version du bash ( exemple : « 4.3 » )
+\V : numéro de version en entier : majeur.mineure.patchlevel ( exemple : « 4.3.43 » )
+\T : l'heure au format 12h HH:MM:SS ( exemple : « 09:45:50 » )
+\t : l'heure au format 24h HH:MM:SS ( exemple : « 21:45:50 » )
+\@ : l'heure au format 12h am/pm HH:MM ( exemple : « 09:45 » )
+\A : l'heure au format 24h am/pm HH:MM ( exemple : « 21:45 » )
+\d : la date au format « jour mois date » ( exemple : « jeu. juil. 21 » )
+\D : date au format spécifié (plus d'info sur le format : man strftime) ( exemple pour « \D{%d/%m/%Y %H:%M:%S} » : « 21/07/2016 21:43:54 »)
+\n : saut de ligne
+\r : retour chariot
+\ : antislash
+\e : caractère d'échappement ASCII, équivalent à \033 (utile pour ajouter les couleurs)
+[ : début de chaîne contenant des caractères non imprimable
+ ] : fin de chaîne contenant des caractères non imprimable
+```
+
+## 3.La couleur :
 
 Pour cela, il faut utiliser les caractères spéciaux \e, \[, \].
 Les codes couleurs utilisés comportent 2 éléments, le premier indique si le texte doit être en gras (0 ou 1) et le second le code couleur (30 à 37 sans couleur de fond et 40 à 47 avec couleur de fond).
 Le code couleur s'utilise ainsi
 \[\033[00;31m\] pour le rouge et \[\033[01;31m\] pour le rouge clair
 et fermer ta  zone" couleur par  \[\033[00m\]
+```shell
 
-   - Noir 0;30   
-   - Gris foncé 1;30
-   - Bleu 0;34
-   - Bleu clair 1;34
-   - Vert 0;32
-   - Vert clair 1;32
-   - Cyan 0;36
-   - Cyan clair 1;36
-   - Rouge 0;31
-   - Rouge clair 1;31
-   - Violet 0;35
-   - Violet clair 1;35
-   - Brun 0;33
-   - Jaune 1;33
-   - Gris clair 0;37
-   - Blanc 1;37
+Noir 0;30   
+Gris foncé 1;30
+Bleu 0;34
+Bleu clair 1;34
+Vert 0;32
+Vert clair 1;32
+Cyan 0;36
+Cyan clair 1;36
+Rouge 0;31
+Rouge clair 1;31
+Violet 0;35
+Violet clair 1;35
+Brun 0;33
+Jaune 1;33
+Gris clair 0;37
+Blanc 1;37
+```
