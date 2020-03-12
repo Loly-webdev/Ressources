@@ -1,6 +1,9 @@
 # Fichier de configuration de nginx
 
+##### A mettre dans /etc/nginx/nginx.conf
+
 ```sh
+
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;
