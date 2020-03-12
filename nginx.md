@@ -18,8 +18,8 @@ server {
 	server_name source;
 
 	location / {
-		try_files $uri $uri/ /index.php?args;
-	}
+    try_files $uri $uri/ /index.php?q=$uri&$args;
+}
 	
 	location ~ \.php$ {
 		include snippets/fastcgi-php.conf;
