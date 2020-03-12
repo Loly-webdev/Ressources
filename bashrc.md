@@ -84,7 +84,7 @@ PROMPT_COMMAND='setPromptValue'
 - Les codes couleurs utilisés comportent 2 éléments, le premier indique si le texte doit être en gras (0 ou 1) et le second - le code couleur (30 à 37 sans couleur de fond et 40 à 47 avec couleur de fond).
 - Le code couleur s'utilise ainsi :
 \[\033[00;31m\] pour le rouge et \[\033[01;31m\] pour le rouge clair
-et fermer ta  zone" couleur par  \[\033[00m\]
+et fermer la  zone" couleur par  \[\033[00m\]
 ```shell
 
 Noir 0;30   
