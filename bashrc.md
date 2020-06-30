@@ -3,17 +3,26 @@
 ```shell
 # basique
 #### ALIAS COMMANDE SYS ####
-alias ls="ls --color"
-alias ll="ls -la"
+#alias dir='dir --color=auto'
+#alias vdir='vdir --color=auto'
+alias ls='ls --color=auto'
+### some more ls aliases ###
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 alias lh="ls -lh"
-alias la="ls -a"
 alias lisa='ls -lisa'
+### grep aliases ###
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 alias igrep="grep -i"
-alias grep="grep --color"
+
 ##### ALIAS PERSOS ######
 alias refresh='source ~/.bashrc'
 alias galias='git config --list | findstr "alias"'
 alias gbd='git branch --merged | grep -Ev "\*|master|develop" | xargs -r git branch -D'
+
 ##### ALIAS ROOT ######
 alias www='cd /var/www'
 alias blog='cd /var/www/blog'
