@@ -11,13 +11,13 @@ Cliquer sur “clone or download”
 Choisir “clone with SSH”
 Récupérer l’adresse 
 ```
-###### Ouvrir la console et se  placer dans le répertoire www :
+  * Ouvrir la console et se  placer dans le répertoire www :
 ```
-git clone .[adresse_recuperer]
+  git clone .[adresse_recuperer]
 ```
-###### Se placer dans le répertoire cloné :
+  * Se placer dans le répertoire cloné :
 ```
-git push -u origin
+  git push -u origin
 ```
 
 3. Créer le projet en kanban sur github avec les issues prévues
@@ -30,13 +30,13 @@ configurer les branches et CodeClimate si besoin
 ```
 git br [nom_de_la_branche]
 ```
-###### On se place sur la branche 
+  * On se place sur la branche 
 ```
-git co [nom_de_la_branche]
+  git co [nom_de_la_branche]
 ```
-###### On fait suivre cette branche sur develop (si on creer develop faire suivre sur main)
+  * On fait suivre cette branche sur develop (si on creer develop faire suivre sur main)
 ```
-git br -u origin/develop
+  git br -u origin/develop
 ```
 ###### On track la branche 
 ```
@@ -52,13 +52,14 @@ git branch -d [nom_de_la_branche]
 ```
 
 5. Versionner
+
+  * Voir l’état des fichiers à versionner
 ```
-⋅⋅* Voir l’état des fichiers à versionner
-git st
+  git st
 ```
--* Ajouter tous les fichiers pour le versionnement
+  * Ajouter tous les fichiers pour le versionnement
 ```
-git adda
+  git adda
 ###### Ecrire un commit pour expliquer les changements apportés
 git ci -m “  “
 ###### Versionner les changement sur le distant
