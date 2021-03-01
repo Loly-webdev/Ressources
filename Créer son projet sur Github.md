@@ -10,9 +10,13 @@ Choisir si on souhaite ajouter un .gitignore
 Cliquer sur “clone or download”
 Choisir “clone with SSH”
 Récupérer l’adresse 
+```
 ###### Ouvrir la console et se  placer dans le répertoire www :
+```
 git clone .[adresse_recuperer]
+```
 ###### Se placer dans le répertoire cloné :
+```
 git push -u origin
 ```
 
@@ -25,21 +29,31 @@ configurer les branches et CodeClimate si besoin
 4. Créer une nouvelle branche pour travailler et ne pas écraser main (par défaut develop sinon le nom de l’issue courante)
 ```
 git br [nom_de_la_branche]
+```
 ###### On se place sur la branche 
+```
 git co [nom_de_la_branche]
+```
 ###### On fait suivre cette branche sur develop (si on creer develop faire suivre sur main)
+```
 git br -u origin/develop
+```
 ###### On track la branche 
+```
 git push -u origin [nom_de_la_branche]
+```
 ###### Voir les branches trackées 
+```
 git bra
+```
 ###### supprimer une branche
+```
 git branch -d [nom_de_la_branche]
 ```
 
 5. Versionner
 ```
-###### Voir l’état des fichiers à versionner
+⋅⋅* Voir l’état des fichiers à versionner
 git st
 ###### Ajouter tous les fichiers pour le versionnement
 git adda
