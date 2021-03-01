@@ -56,7 +56,7 @@ git branch -d [nom_de_la_branche]
 ⋅⋅* Voir l’état des fichiers à versionner
 git st
 ```
-⋅⋅* Ajouter tous les fichiers pour le versionnement
+* Ajouter tous les fichiers pour le versionnement
 ```
 git adda
 ###### Ecrire un commit pour expliquer les changements apportés
