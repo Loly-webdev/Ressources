@@ -27,6 +27,9 @@ alias gbd='git branch --merged | grep -Ev "\*|master|develop" | xargs -r git bra
 alias www='cd /var/www'
 alias blog='cd /var/www/blog'
 
+##### ALIAS SYMFONY SERVER ######
+alias sfs='symfony server:start -d'
+alias sfw='symfony open:local'
 
 # Affichage du prompt
 function setPromptValue {
