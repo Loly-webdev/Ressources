@@ -39,8 +39,10 @@ yarn install
 * Configurer Encore / Webpack 
 ```
 Tout dans Encore est configuré via un webpack.config.js (fichier à la racine de votre projet.)
-L' élément clé est le suivant addEntry(): cela indique à Encore de charger le fichier assets/app.js et de suivre toutes les instructions require(). 
-Il emballera ensuite tous ensemble et - grâce au premier appargument - affichera le fichier final app.js et les fichiers app.css dans le  répertoire public/build.
+L' élément clé est le suivant addEntry(): 
+cela indique à Encore de charger le fichier assets/app.js et de suivre toutes les instructions require(). 
+Il emballera ensuite tous ensemble et - grâce au premier appargument - 
+affichera le fichier final app.js et les fichiers app.css dans le  répertoire public/build.
 ```
 * Pour créer les actifs, exécutez (au choix yarn ou npm):
 *compile assets une fois*
