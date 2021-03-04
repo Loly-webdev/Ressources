@@ -115,7 +115,3 @@ git remote show origin
 ```
 git remote prune origin 
 ```
-* Voir toutes les branches tracker
-```
-git bra
-```
