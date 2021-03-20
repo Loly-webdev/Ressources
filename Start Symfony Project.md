@@ -6,7 +6,7 @@ composer require --dev symfony/maker-bundle
 ```
 1.2 Configurer la base de données
 ```shell
-DATABASE_URL="mysql://root@127.0.0.1:3306/snowtricks?serverVersion=mariadb-10.4.10"
+DATABASE_URL="mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7"
 ```
 1.3 Créer la base de données
 ```shell
