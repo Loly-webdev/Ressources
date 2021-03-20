@@ -76,10 +76,14 @@ php bin/console make:crud
 ```shell
 composer require symfony/var-dumper --dev
 dd() => dump() and die()
+```
 Pour le debug :
+```shell
 php bin/console debug:autowiring (pour avoir la liste) 
 php bin/console debug:autowiring nom_du_service
+```
 Pour supprimer le dernier commit :
+```shell
 git revert HEAD~1
 git push
 ```
